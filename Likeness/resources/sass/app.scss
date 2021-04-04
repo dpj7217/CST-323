@@ -1,0 +1,162 @@
+
+$navbarWidth: 3em;
+
+a {
+  text-decoration: none !important;
+}
+
+
+.content {
+  margin-top: 10rem;
+}
+
+.navigation-bar {
+  height: 100%;
+  width: $navbarWidth;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  color: white;
+  background-color: #022d73;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: self-start;
+  transition: width 1.5s ease-in-out;
+}
+
+.navigation-bar:hover {
+  width: 10em;
+}
+
+
+.navigation-item:hover {
+  background-color: white;
+  color: black;
+  transition: color .1s ease-in-out;
+  transition: background-color .1s ease-in-out
+}
+
+.navigation-item {
+  text-decoration: none;
+  font-family: "Lucida Sans", "monospace", sans-serif;
+  color: white;
+  margin: 0 auto 1rem auto;
+  padding: 1em 0 1em 1em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.navbar-icon {
+  height: 44%;
+  width: 44%;
+}
+
+#navbarChevron {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: auto;
+}
+
+#content-wrapper {
+  margin-left: $navbarWidth; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+
+.book-card-top {
+  height: 20rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #91aeff69;
+}
+
+.icon-path {
+  stroke: black;
+  fill: black;
+}
+
+.icon-path:hover {
+  stroke: white;
+  fill: white;
+}
+
+.card-description {
+  height: 10rem;
+}
+
+
+.my-card-footer {
+  flex: 1 1 auto;
+  margin-bottom: 2rem;
+}
+
+.my-card-footer > .btn {
+  width: 100%;
+}
+
+.carousel {
+  background-color: #9797978e;
+}
+
+.card-title {
+  height: 3rem;
+}
+
+.top-bar {
+  background-color: #022d73;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 .5rem;
+  margin-bottom: 1.5rem;
+}
+
+.movie-card-top {
+  height: calc(27rem - 1px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #91aeff69;
+}
+
+.searchbar {
+  float: right;
+  width: 20em;
+  padding: 0;
+  height: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+#searchImg svg {
+  width: 100%;
+  height: 100%;
+}
+
+#searchImg {
+  float: right;
+  padding: 0;
+  width: 1.5em;
+  height: 1.5em;
+  margin: auto;
+}
+
+#cornerSearch {
+  width: 100%;
+  margin: 0.05em 0.5em;
+  border-radius: 0.33em;
+}
